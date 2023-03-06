@@ -1,0 +1,1152 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: $background-color_1;
+	font-family: $font-family_1;
+}
+ul {
+	li {
+		list-style-type: none;
+	}
+}
+a {
+	text-decoration: none;
+}
+/* ------------------------------------------ */
+/* index html  */
+/* ------------------------------------------ */
+h1 {
+	font-size: 60px;
+	font-weight: bold;
+}
+h2 {
+	font-size: 40px;
+	font-weight: bold;
+}
+.remarcado {
+	font-weight: bold;
+	font-style: italic;
+}
+.centrado {
+	text-align: center;
+}
+.navbar {
+	background-color: $background-color_2;
+	font-family: $font-family_2;
+	font-size: 26px;
+	font-weight: bold;
+}
+footer {
+	background-color: $background-color_2;
+	margin: 5px;
+	padding: 10px;
+}
+.principal {
+	max-width: 80%;
+	max-height: 60%;
+	margin: 20px auto;
+	padding: 20px 10px 20px;
+	border: 1px solid #dadada;
+	border-radius: 5px;
+	img {
+		width: 100%;
+		border-radius: 5px;
+	}
+}
+/* ------------- */
+/* historia html */
+/* ------------- */
+.titulo {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.primeraParte {
+	margin-bottom: 30px;
+}
+h3 {
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	padding: 0.1em;
+}
+.bernardita {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	img {
+		width: 100%;
+		border: 1px solid rgb(233, 218, 196);
+		margin-right: 11px;
+	}
+	h3 {
+		font-size: 15px;
+	}
+}
+.texto {
+	line-height: 2.5rem;
+	position: relative;
+	z-index: 3;
+	transition: all 3s;
+	&:hover {
+		transform: rotate(360deg) scale(1.08) translate(0px);
+		background-color: $background-color_3;
+	}
+}
+.card {
+	border: 2px solid $border-color_1;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	display: inline-flex;
+	margin-top: auto;
+	font-size: larger;
+}
+.card-text {
+	width: 100%;
+	height: 100%;
+	background-color: $background-color_1;
+	box-sizing: border-box;
+}
+.tres-fotos {
+	display: flex;
+	align-items: center;
+	margin: auto;
+}
+.a2 {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+	transition: all 3s;
+	&:hover {
+		transform: scale(1.8) translate(100px);
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.segunda {
+		.caption-content {
+			color: $color_1;
+			font-size: 14px;
+			margin: 1rem 2rem 1rem;
+			&:hover {
+				color: $color_2;
+				font-weight: 700;
+				text-align: center;
+				margin-top: 2rem;
+				opacity: 1;
+			}
+		}
+	}
+}
+.segunda {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	background-color: $background-color_4;
+	border: 2px solid $border-color_1;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	transition: all 3s;
+}
+.italic {
+	font-style: italic;
+}
+h4 {
+	text-align: center;
+	font-weight: bold;
+}
+h5 {
+	text-align: center;
+	font-weight: bold;
+}
+.a3 {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	transition: all 3s;
+	&:hover {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.tercera {
+		.caption-content {
+			color: $color_3;
+			font-size: 14px;
+			margin: 2rem 2rem 1rem;
+			text-align: center;
+			&:hover {
+				font-size: 16px;
+				color: $color_1;
+				font-weight: 700;
+				margin-top: 1rem;
+				opacity: 1;
+			}
+		}
+	}
+}
+.tercera {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color: $background-color_4;
+	top: 0;
+	bottom: 0;
+	transition: all 3s;
+	border: 2px solid $border-color_1;
+}
+.a5 {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+	transition: all 3s;
+	&:hover {
+		transform: scale(1.8) translate(-100px);
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.quinta {
+		.caption-content {
+			color: $color_3;
+			font-size: 14px;
+			margin: 1rem 2rem 1rem;
+			&:hover {
+				color: $color_2;
+				font-size: 18px;
+				font-weight: 700;
+				text-align: center;
+				margin-top: 1rem;
+				opacity: 1;
+			}
+		}
+	}
+	h4 {
+		margin-top: 1rem;
+	}
+	p {
+		font-family: $font-family_2;
+		font-size: medium;
+		padding: 0rem 1rem;
+	}
+}
+.quinta {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	position: absolute;
+	background-color: $background-color_5;
+	border: 2px solid $border-color_1;
+	top: 0;
+	bottom: 0;
+	transition: all 3s;
+}
+.segundaParte {
+	display: flex;
+	align-items: baseline;
+	figure {
+		margin: 1rem 1rem;
+	}
+}
+/* ------------ */
+/* lugares html */
+/* ------------ */
+.padreLugares {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: auto auto auto;
+	grid-template-areas: "inmaculada rosario sanpio";
+	gap: 15px;
+}
+.lug1 {
+	grid-area: inmaculada;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	img {
+		width: 300px;
+		height: 250px;
+		border: 4px solid black;
+		margin: 10px;
+	}
+	div {
+		width: 370px;
+		margin: 10px;
+	}
+}
+.lug2 {
+	img {
+		width: 300px;
+		height: 250px;
+		border: 4px solid black;
+		margin: 10px;
+	}
+	div {
+		width: 370px;
+		margin: 10px;
+	}
+	grid-area: rosario;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+.lug3 {
+	img {
+		width: 300px;
+		height: 250px;
+		border: 4px solid black;
+		margin: 10px;
+	}
+	div {
+		width: 370px;
+		margin: 10px;
+	}
+	grid-area: sanpio;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+/* -------------- */
+/* oraciones html */
+/* -------------- */
+.comoRezar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.padreOraciones {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 15px;
+	img {
+		width: 300px;
+		margin: 40px;
+		margin-right: 25px;
+		margin-top: 0;
+		margin-bottom: 5px;
+		padding: 10px;
+		border: 6px solid rgb(212, 58, 192);
+	}
+	.second-image {
+		height: auto;
+		margin-left: 10px;
+	}
+	p {
+		font-size: 1rem;
+		width: 400px;
+	}
+}
+.rezar {
+	padding: 10px;
+	margin: 20px;
+	border: 5px solid rgb(212, 58, 192);
+}
+/* ---------------- */
+/* actividades html */
+/* ---------------- */
+.bloque1 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+table {
+	overflow: hidden;
+	box-sizing: border-box;
+	width: 66%;
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.align-middle {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.separar {
+	padding: 10px;
+}
+.video {
+	margin-top: 10px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 10px gray;
+	border: 5px solid brown;
+	iframe {
+		margin: -7px;
+	}
+}
+/* ------------- */
+/* contacto html */
+/* ------------- */
+.hoja_contacto {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.map-frame {
+	iframe {
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
+	margin-top: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px gray;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 5px;
+	width: 66%;
+	height: 450px;
+	border: 5px solid lightblue;
+}
+.contacto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.icon {
+	width: 48px;
+	height: 48px;
+}
+.redes {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+/* breakpoint valor máximo para desktop */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+
+	/* para página inicio */
+	a {
+		.navbar-brand {
+			img {
+				width: 92px;
+			}
+		}
+	}
+
+	h1 {
+		font-size: 55px;
+	}
+
+	/* para página historia  */
+	.bernardita {
+		h3 {
+			margin-top: 10px;
+		}
+	}
+
+	.card {
+		font-size: small;
+	}
+
+	.texto {
+		line-height: 1.4rem;
+	}
+
+	.a2 {
+		.segunda {
+			.caption-content {
+				margin-top: 1.5rem;
+				font-size: 12px;
+			}
+		}
+	}
+
+	h4 {
+		font-size: medium;
+	}
+
+	h5 {
+		font-size: medium;
+	}
+
+	.a3 {
+		.tercera {
+			.caption-content {
+				font-size: 12px;
+				margin-top: 1.5rem;
+
+				&:hover {
+					font-weight: 700;
+					margin-top: 2rem;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.a5 {
+		h4 {
+			margin-top: 10px;
+		}
+
+		.quinta {
+			.caption-content {
+				margin: 0;
+			}
+		}
+
+		p {
+			line-height: 1.3rem;
+			font-size: small;
+		}
+	}
+
+	.container-fluid {
+		h3 {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+	}
+
+	.segundaParte {
+		img {
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+		}
+
+		.italic {
+			font-size: 0.8rem;
+			text-align: left;
+		}
+	}
+
+	/* para página lugares */
+	.padreLugares {
+		grid-template-columns: repeat(3, 0.5fr);
+		gap: 10px;
+	}
+
+	.lug1 {
+		margin-left: auto;
+
+		img {
+			width: 200px;
+			height: 180px;
+			border: 3px solid orange;
+			margin: 5px;
+		}
+
+		div {
+			width: 220px;
+			margin: 10px;
+			font-size: 1rem;
+		}
+
+		figcaption {
+			font-size: medium;
+		}
+	}
+
+	.lug2 {
+		img {
+			width: 200px;
+			height: 180px;
+			border: 3px solid orange;
+			margin: 5px;
+		}
+
+		div {
+			width: 220px;
+			margin: 10px;
+			font-size: 1rem;
+		}
+
+		figcaption {
+			font-size: medium;
+		}
+	}
+
+	.lug3 {
+		img {
+			width: 200px;
+			height: 180px;
+			border: 3px solid orange;
+			margin: 5px;
+		}
+
+		div {
+			width: 220px;
+			margin: 10px;
+			font-size: 1rem;
+		}
+
+		figcaption {
+			font-size: medium;
+		}
+	}
+
+	/* para página oraciones */
+	.padreOraciones {
+		justify-content: space-evenly;
+
+		img {
+			width: 250px;
+			border: 3px solid lightcoral;
+		}
+
+		.second-image {
+			display: none;
+		}
+
+		p {
+			margin-left: 20px;
+			font-size: 1rem;
+			width: 400px;
+		}
+	}
+
+	/* para página contacto */
+	.hoja_contacto {
+		iframe {
+			margin-bottom: 20px;
+		}
+	}
+
+	.comentario {
+		h4 {
+			text-align: left;
+		}
+	}
+}
+
+/* breakpoint valor máximo para tablet */
+@media (min-width:576px) and (max-width: 767.98px) {
+	nav {
+		.container-fluid {
+			img {
+				width: 100px;
+				height: auto;
+			}
+		}
+	}
+	/* para página inicio */
+	.titulo {
+		h1 {
+			font-size: 42px;
+		}
+		h2 {
+			font-size: 33px;
+		}
+	}
+	/* para página historia */
+	.bernardita {
+		img {
+			width: 80%;
+		}
+	}
+	.texto {
+		width: 100%;
+		line-height: 1.5rem;
+		font-size: small;
+		padding: 1.5rem 0.5rem 2rem 0.5rem;
+	}
+	.a2 {
+		margin: 10px 70px;
+		.segunda {
+			.caption-content {
+				font-size: 10px;
+			}
+		}
+		&:hover {
+			transform: scale(1.8) translate(5px);
+		}
+	}
+	.a3 {
+		margin: 10px 70px;
+		.tercera {
+			.caption-content {
+				p {
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	.a5 {
+		margin: 10px 70px;
+		&:hover {
+			transform: scale(1.7) translate(0px);
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		h4 {
+			font-size: 18px;
+		}
+		p {
+			font-size: 16px;
+		}
+	}
+	.tercera {
+		.italic {
+			font-size: 18px;
+			font-style: italic;
+		}
+	}
+	.caption-content {
+		h4 {
+			font-size: 18px;
+		}
+		h5 {
+			font-size: 18px;
+		}
+	}
+	.container-fluid {
+		h3 {
+			font-size: 25px;
+			text-align: center;
+		}
+	}
+	.segundaParte {
+		figure {
+			margin: 1rem;
+			margin-left: auto;
+		}
+		img {
+			margin: 10px 100px;
+		}
+	}
+	/* para página lugares */
+	.padreLugares {
+		grid-template-columns: repeat(2, 0.5fr);
+		grid-template-areas: "inmaculada rosario";
+		gap: 5px;
+	}
+	.lug1 {
+		margin-left: auto;
+		img {
+			width: 250px;
+			height: 200px;
+			border: 2px solid blue;
+			margin: 5px;
+		}
+		div {
+			width: 270px;
+			margin: 10px;
+			font-size: 1rem;
+		}
+		figcaption {
+			font-size: medium;
+		}
+	}
+	.lug2 {
+		img {
+			width: 250px;
+			height: 200px;
+			border: 2px solid blue;
+			margin: 5px;
+		}
+		div {
+			width: 270px;
+			margin: 10px;
+			font-size: 1rem;
+		}
+		figcaption {
+			font-size: medium;
+		}
+	}
+	.lug3 {
+		display: none;
+	}
+	/* para página oraciones */
+	.comoRezar {
+		h1 {
+			font-size: 37px;
+		}
+		h2 {
+			font-size: 27px;
+		}
+	}
+	.rezar {
+		font-size: 0.8rem;
+		width: 70vw;
+	}
+	.padreOraciones {
+		flex-direction: row-reverse;
+		img {
+			width: 200px;
+			border: 3px solid blueviolet;
+		}
+		.second-image {
+			display: none;
+		}
+		p {
+			margin-left: 40px;
+			font-size: 12px;
+			width: 300px;
+		}
+	}
+	/* para página actividades */
+	.video {
+		iframe {
+			width: 500px;
+			height: 417px;
+		}
+	}
+	/* para página contacto */
+	.hoja_contacto {
+		margin-top: 10px;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 20px;
+		h2 {
+			font-size: 20px;
+		}
+		img {
+			width: 40px;
+		}
+		iframe {
+			width: 463px;
+			height: 350px;
+		}
+	}
+	.map-frame {
+		margin: 0px;
+		padding: 0px;
+		height: 359px;
+		border: 3px solid burlywood;
+		iframe {
+			margin: 0px;
+		}
+	}
+}
+
+/* breakpoint valor máximo para celulares */
+@media screen and (max-width: 575.98px) {
+	.navbar-nav {
+		a {
+			font-size: 0.8rem;
+		}
+	}
+
+	li {
+		img {
+			width: 50px;
+		}
+	}
+
+	/* para página inicio */
+	h1 {
+		font-size: 30px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	/* para página historia */
+	.bernardita {
+		img {
+			width: 50%;
+			margin-left: 40px;
+		}
+
+		h3 {
+			margin-left: 40px;
+		}
+	}
+
+	.card {
+		margin-left: 20px;
+		margin-left: 30px;
+	}
+
+	.texto {
+		width: 100%;
+		line-height: 1.5rem;
+		font-size: small;
+		padding: 1.5rem 0.5rem 2rem 0.7rem;
+		transition: none;
+		background-color: $background-color_1;
+
+		&:hover {
+			transform: none;
+			background-color: $background-color_1;
+		}
+	}
+
+	.a2 {
+		margin: 10px 50px;
+		transition: none;
+
+		img {
+			width: 100%;
+		}
+
+		&:hover {
+			transform: none;
+		}
+
+		.segunda {
+			.caption-content {
+				font-size: 13px;
+				text-align: center;
+
+				&:hover {
+					color: $color_1;
+				}
+			}
+
+			background-color: $background-color_1;
+		}
+	}
+
+	.a3 {
+		margin: 10px 50px;
+		transition: none;
+
+		img {
+			width: 100%;
+		}
+
+		.tercera {
+			.caption-content {
+				font-size: 16px;
+				color: $color_1;
+				text-align: center;
+			}
+
+			background-color: $background-color_1;
+		}
+	}
+
+	.a5 {
+		margin: 10px 50px;
+		transition: none;
+
+		img {
+			width: 100%;
+		}
+
+		&:hover {
+			transform: none;
+			transform: none;
+		}
+
+		.quinta {
+			.caption-content {
+				&:hover {
+					color: $color_1;
+				}
+
+				color: $color_1;
+				font-weight: bold;
+				font-size: 16px;
+
+				h4 {
+					font-weight: 700;
+				}
+			}
+
+			background-color: $background-color_1;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 1.3rem;
+			text-align: center;
+		}
+	}
+
+	.segunda {
+		position: relative;
+		transition: none;
+	}
+
+	.tercera {
+		position: relative;
+
+		.italic {
+			font-size: 18px;
+			font-style: italic;
+		}
+	}
+
+	.quinta {
+		position: relative;
+		transition: none;
+	}
+
+	.caption-content {
+		h4 {
+			font-size: 18px;
+		}
+
+		h5 {
+			font-size: 18px;
+		}
+	}
+
+	p {
+		font-weight: 700;
+	}
+
+	.container-fluid {
+		h3 {
+			font-size: 25px;
+			margin-left: 20px;
+		}
+	}
+
+	.segundaParte {
+		figure {
+			margin: auto;
+		}
+
+		img {
+			width: 100%;
+			margin-left: 15px;
+		}
+
+		.italic {
+			text-align: center;
+		}
+	}
+
+	figcaption {
+		margin: auto;
+	}
+
+	/* para página lugares */
+	.padreLugares {
+		grid-template-columns: repeat(2, 0.5fr);
+		grid-template-areas: "none inmaculada""none rosario";
+		gap: 5px;
+	}
+
+	.lug1 {
+		margin-left: auto;
+
+		img {
+			width: 200px;
+			height: 150px;
+			border: 1px solid $border-color_2;
+			margin: 5px;
+		}
+
+		div {
+			width: 270px;
+			margin: 10px;
+			font-size: 0.8rem;
+		}
+	}
+
+	.lug2 {
+		margin-left: auto;
+
+		img {
+			width: 200px;
+			height: 150px;
+			border: 1px solid $border-color_2;
+			margin: 5px;
+		}
+
+		div {
+			width: 270px;
+			margin: 10px;
+			font-size: 0.8rem;
+		}
+	}
+
+	.lug3 {
+		display: none;
+	}
+
+	/* para página oraciones */
+	.padreOraciones {
+		flex-direction: column;
+
+		img {
+			width: 150px;
+			margin-bottom: 20px;
+			border: 2px solid $border-color_2;
+		}
+
+		.second-image {
+			display: none;
+		}
+
+		p {
+			font-size: 14px;
+			width: 300px;
+		}
+	}
+
+	/* para página actividades */
+	table {
+		width: auto;
+		height: auto;
+		margin-top: 45px;
+
+		th {
+			font-size: 0.8rem;
+		}
+	}
+
+	td {
+		font-size: 0.8rem;
+	}
+
+	.video {
+		iframe {
+			width: 70vw;
+			height: auto;
+		}
+	}
+
+	/* para página contacto */
+	.hoja_contacto {
+		margin-top: 10px;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 20px;
+
+		h2 {
+			font-size: 15px;
+		}
+
+		iframe {
+			width: 350px;
+			height: 257px;
+		}
+	}
+
+	.navbar {
+		img {
+			width: 100px;
+		}
+	}
+
+	.map-frame {
+		margin: 0px;
+		padding: 0px;
+		height: 260px;
+		border: 2px dashed $border-color_2;
+
+		iframe {
+			margin: 0px;
+		}
+	}
+}
